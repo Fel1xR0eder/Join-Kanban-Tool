@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN - Add Task</title>
+    <link rel="stylesheet" href="css/add-task.css">
+    <link rel="stylesheet" href="css/add-task-2.css">
+    <link rel="stylesheet" href="./responsive-css/add-task-responsive.css">
+    <script src="js/scriptboard.js"></script>
+    <script src="js/scriptAddTask.js"></script>
+    <script src="/board.html"></script>
+    <script src="js/mini_backend.js"></script>
+</head>
+
+<body>
+    <div onclick="event.stopPropagation()"  id="addTaskContent" class="show-addTask show">
+        <div id="mainHeadline" class="include-headline">
+            <h1 class="addTask-header">Add task</h1>
+            <img class="close-addtask-include" onclick="closeIncludeAddTask()" src="./assets/img/exit.png" alt="">
+        </div>
+        <form onsubmit="checkFormValidation(); return false">
+            <div id="taskContent" class="taskContent-Include">
+                <div id="taskContentLeft" class="taskContentLeft">
+                    <div class="addToTaskInputSection">
+                        <span class="addTask-Subheaders">Title</span>
+                        <input required placeholder="Enter a title" class="addTotaskInputField " id="title">
+                    </div>
+                    <div class="addToTaskInputSection">
+                        <span class="addTask-Subheaders">Description</span>
+                        <textarea required id="description" placeholder="Enter a Description"
+                            class="input-description"></textarea>
+                    </div>
+                    <div id="category" class="addToTaskInputSection"></div>
+                    <div id="assignedTo" class="addToTaskInputSection"></div>
+                </div>
+                <div id="taskContentRight" class="taskContentRight">
+                    <div class="addToTaskInputSectionRight">
+                        <span class="addTask-Subheaders">Due date</span>
+                        <input type="date" placeholder="" class="addTotaskInputField" id="date">
+                    </div>
+                    <div id="prio" class="prio addToTaskInputSectionRight"></div>
+                    <div id="subtask" class="Subtask addToTaskInputSectionRight"></div>
+                    <div class="btnRow">
+                        <button onclick="clearAllFields()"  type="button" class="guest-log-in-btn" >Clear</button>
+                        <button  class="log-in-btn">Add Task</button>
+                    </div>
+                </div>
+            </div>
+            <div id="popup-addTask" onclick="closeSuccessPopUp()" class="">
+                <div id="popup-content" class="messageBox"></div>
+            </div>
+        </form>
+
+
+</body>

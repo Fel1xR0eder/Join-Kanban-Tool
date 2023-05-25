@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/join-logo.png">
+    <link rel="stylesheet" href="./css/style-legal.css">
+    <title>JOIN - Log in</title>
+    <script src="./js/login.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/contacts-script.js"></script>
+    <script src="./js/mini_backend.js"></script>
+    <link rel="stylesheet" href="./css/index.css"> 
+</head>
+
+<body onload="onloadLogin()">
+    <div class="full-login-content">
+        <div class="head-row">
+            <div class="start-logo">
+                <img class="join-logo" src="assets/img/join-logo.png" alt="">
+            </div>
+            <div class="sign-up-div">
+                <span>Not a Join user?</span>
+                <button onclick= "location.href='sign-up.html'" class="sign-up-btn">Sign up</button>
+            </div>
+        </div>
+        <div class="login-content">
+            <form onsubmit="login(); return false;" class="log-in-container">
+                <div class="log-in">
+                    <h1>Log in</h1>
+                    <img src="./assets/img/blue-bar-horizontal.png">
+                </div>
+                <div class="log-in-input">
+                    <input id="login-email" required placeholder="Email" type="email">
+                    <img src="./assets/img/mail-logo.png">
+                </div>
+                <div class="log-in-input">
+                    <input id="login-password" required placeholder="Password" type="password">
+                    <img src="./assets/img/padlock.png">
+                </div>
+                <div class="log-in-checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span>Remember me</span>
+                    <a href="forgot-password.html" class="href-blue">Forgot my password</a>
+                </div>
+                <div class="button-container">
+                    <button class="log-in-btn">Log in</button>
+                    <button onclick="guestLogin()" class="guest-log-in-btn">Guest Log in</button>
+                </div>
+            </form>
+        </div>
+        <div id="loader" class="loader-background">
+            <div class="loader"></div>
+        </div>
+        <div class="d-none" id="msgBox"></div>
+    </div>
+</body>
+
+</html>

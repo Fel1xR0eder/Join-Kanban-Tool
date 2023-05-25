@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN - Add Contacts</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/join-logo.png">
+    <link rel="stylesheet" href="./css/add-contact.css">
+    <link rel="stylesheet" href="./responsive-css/add-contact.responsive.css">
+    <link rel="stylesheet" href="./responsive-css/edit-contact.responsive.css">
+    <script src="./js/contacts-script.js"></script>
+    <script src="js/mini_backend.js"></script>
+</head>
+
+
+<body>
+    <div onclick="event.stopPropagation()" class="full-container show" id="add-contact-popup">
+        <div class="left-container">
+            <img class="join-logo-add" src="./assets/img/join-logo-white.png">
+            <h1>Add contact</h1>
+            <span>Tasks are better with a team!</span>
+            <img class="blue-bar" src="./assets/img/blue-bar-horizontal.png">
+        </div>
+        <div class="right-container">
+            <span onclick="closePopup()" class="x-container">X</span>
+            <div class="img-container">
+                <img id="profile-img" src="./assets/img/user-white.png">
+            </div>
+            <form onsubmit="createContact(); return false;">
+                <div class="input">
+                    <div class="log-in-input">
+                        <input minlength="" required id="input-name" placeholder="Last name" type="text">
+                        <img src="./assets/img/body-logo.png">
+                    </div>
+                    <div class="log-in-input">
+                        <input required id="input-first-name" placeholder="First name" type="text">
+                        <img src="./assets/img/body-logo.png">
+                    </div>
+                    <div class="log-in-input">
+                        <input required id="input-email" type="email" placeholder="Email">
+                        <img src="./assets/img/mail-logo.png">
+                    </div>
+                    <div class="log-in-input">
+                        <input required id="input-phone" placeholder="Phone" minlength="11" maxlength="15"
+                            type="number">
+                        <img src="./assets/img/phone-logo.png">
+                    </div>
+
+                    <select class="select-color" name="colors" id="colors">
+                        <option selected disabled>Choose a color</option>
+                        <option value="#00F2F0">Turquoise</option>
+                        <option value="#FF0100">Red</option>
+                        <option value="#29D300">Green</option>
+                        <option value="#FF8A01">Orange</option>
+                        <option value="#E200BE">Purple</option>
+                        <option value="#0038FF">Blue</option>
+                    </select>
+
+                    <div class="button-container">
+                        <button onclick="closePopup()" class="secondary-btn">Cancel
+                            <img src="./assets/img/x.png">
+                        </button>
+                        <button class="primary-btn">Create contact
+                            <img src="./assets/img/done-white-btn.png">
+                        </button>
+                    </div>
+                    <div id="popup-addTask" onclick="closeSuccessPopUp()" class="">
+                        <div id="popup-content" class="messageBox"></div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

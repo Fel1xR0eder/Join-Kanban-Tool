@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Contacts</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/join-logo.png">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/board-2.css">
+    <link rel="stylesheet" href="./css/header-sidebar.css">
+    <link rel="stylesheet" href="./css/style-legal.css">
+    <link rel="stylesheet" href="./responsive-css/summary-responsive.css">
+    <link rel="stylesheet" href="./responsive-css/board-responsive.css">
+    <link rel="stylesheet" href="./responsive-css/contacts-responsive.css">
+    <link rel="stylesheet" href="./responsive-css/add-contact.responsive.css">
+    <link rel="stylesheet" href="./responsive-css/edit-contact.responsive.css">
+    <script src="./js/contacts-script.js"></script>
+    <script src="./js/templateContacts.js"></script>
+    <script src="./js/mini_backend.js"></script>
+    <script src="js/scriptAddTask.js"></script>
+    <script src="js/scriptboard.js"></script>
+    <script src="js/templateAddTask.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body onload="onloadContacts()">
+    <div onclick="closePopup()" id="show-Contacts-Background" class="show-Contact-Background d-none">
+
+    </div>
+    <div class="header-contacts">
+        <img class="new-logo d-none" src="./assets/img/join-logo.png">
+        <span>Kanban Project Management Tool</span>
+        <div id="header-contacts" class="head-container-right">
+            <a href="./help.html"><img src="./assets/img/question.png"></a>
+            <img class="head-profile-img" onmouseover="showLogout()" src="./assets/img/profile-img.png">
+            <div id="header-logout" onmouseout="hideLogout()" class="header-logout">
+                <button onclick='logout()' id="logout-button" class="logout-button"> Log-out? </button>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-header" id="sidebar-header">
+
+        <div class="sidebar-top">
+            <img class="join-logo" src="./assets/img/join-logo-white.png">
+        </div>
+        <div class="sidebar-mid">
+            <div class="sidebar-center">
+                <a class="sidebar-link" id="sidebar-link0" href="./summary.html">
+                    <div class="link-name">
+                        Summary
+                    </div>
+                    <div>
+                        <img class="link-img" src="./assets/img/summary-logo.png">
+                    </div>
+                </a>
+                <a id="sidebar-link1" href="./board.html">
+                    <div class="link-name">
+                        Board
+                    </div>
+                    <div>
+                        <img class="link-img" src="./assets/img/board-logo.png">
+                    </div>
+                </a>
+                <a class="sidebar-active" id="sidebar-link2" href="./add-task.html">
+                    <div class="link-name">
+                        Add Task
+                    </div>
+                    <div>
+                        <img class="link-img" src="./assets/img/add-task-logo.png">
+                    </div>
+                </a>
+                <a id="sidebar-link3" style="background-color: #091931;" href="./contacts.html">
+                    <div class="link-name">
+                        Contacts
+                    </div>
+                    <div>
+                        <img class="link-img" src="./assets/img/contacts-logo.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a class="sidebar-bottom" href="./legal-notice.html">Legal notice
+            <div class="sidebarBottomLegalNotice">
+                <img src="./assets/img/info-logo.png">
+            </div>
+        </a>
+    </div>
+
+    <div id="contact" class="contact">
+        <div id="show-addTaskInclude"></div>
+
+        <div class="contact-list-overview">
+            <div id="contact-list" class="contact-list">
+            </div>
+        </div>
+        <div class="contact-main" id="contact-main">
+            <div id="contact-headline" class="headline-index-contact">
+                <span>Contacts</span>
+                <img src="./assets/img/headline-bar.png">
+                <p>Better with a team</p>
+            </div>
+            <div id="show-contact" class="show-contact"></div>
+            <button id="add-new-contact-btn" onclick="addNewContact()" class="new-contact">
+                New Contact<img src="./assets/img/user-plus.png">
+            </button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <h3>Contact successfully created!</h3>
+                </div>
+            </div>
+        </div>
+        <div id="loader" class="loader-background">
+            <div class="loader"></div>
+        </div>
+    </div>
+</body>
+
+</html>
