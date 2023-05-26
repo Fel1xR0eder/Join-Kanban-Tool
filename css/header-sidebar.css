@@ -126,7 +126,7 @@ input {
     gap: 26px;
     width: 106px;
     height: 49px;
-
+    margin-left: 10px;
 }
 
 .head-container-right img {

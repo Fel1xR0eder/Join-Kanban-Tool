@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/img/join-logo.png">
     <title>JOIN - Add Task</title>
-    <link rel="stylesheet" href="css/add-task.css">
-    <link rel="stylesheet" href="css/add-task-2.css">
-    <link rel="stylesheet" href="css/header-sidebar.css">
+    <link rel="stylesheet" href="./css/add-task.css">
+    <link rel="stylesheet" href="./css/add-task-2.css">
+    <link rel="stylesheet" href="./css/header-sidebar.css">
     <link rel="stylesheet" href="./responsive-css/summary-responsive.css">
     <link rel="stylesheet" href="./responsive-css/board-responsive.css">
     <link rel="stylesheet" href="./responsive-css/add-task-responsive.css">
     <link rel="stylesheet" href="./responsive-css/contacts-responsive.css">
-    <script src="js/mini_backend.js"></script>
-    <script src="js/scriptboard.js"></script>
-    <script src="js/scriptAddTask.js"></script>
-    <script src="js/contacts-script.js"></script>
-    <script src="js/templateAddTask.js"></script>
-    <script src="js/login.js"></script>
+    <script src="./js/mini_backend.js"></script>
+    <script src="./js/scriptboard.js"></script>
+    <script src="./js/scriptBoard-2.js"></script>
+    <script src="./js/scriptAddTask.js"></script>
+    <script src="./js/scriptAddTask-2.js"></script>
+    <script src="./js/contacts-script.js"></script>
+    <script src="./js/contacts-script-2.js"></script>
+    <script src="./js/templateAddTask.js"></script>
+    <script src="./js/login.js"></script>
 </head>
 
 <body onload="onload()">
@@ -109,7 +112,7 @@
 
                     <div class="addToTaskInputSectionRight">
                         <span class="addTask-Subheaders">Due date</span>
-                        <input type="date" placeholder="" class="addTotaskInputField" id="date">
+                        <input type="date" name="today" placeholder="" class="addTotaskInputField" id="date">
                     </div>
                     <div id="prio" class="prio addToTaskInputSectionRight"></div>
                     <div id="subtask" class="Subtask addToTaskInputSectionRight"></div>
@@ -129,5 +132,10 @@
         </div>
     </div>
 </body>
+
+<script>
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName('today')[0].setAttribute('min', today);
+</script>
 
 </html>
