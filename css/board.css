@@ -144,7 +144,7 @@ input {
     align-items: flex-end;
 }
 
-.modyfy-button {
+.modify-button {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -255,7 +255,6 @@ input {
     padding: 4px 0px;
     gap: 10px;
     width: 80px;
-    height: 51px;
     background: #2A3647;
     border-radius: 8px;
     color: white;

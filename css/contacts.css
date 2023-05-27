@@ -119,7 +119,7 @@ input {
     position: absolute;
     width: 569px;
     height: 73px;
-    left: 700px;
+    left: 600px;
     top: 171px;
 }
 
@@ -331,8 +331,8 @@ input {
     position: absolute;
     width: 193px;
     height: 53px;
-    left: 1195px;
-    top: 70vh;
+    left: 83%;
+    top: 85%;
     background: #2A3647;
     border: 1px solid #2A3647;
     border-radius: 10px;

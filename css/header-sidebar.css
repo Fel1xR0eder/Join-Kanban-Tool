@@ -2,6 +2,7 @@ body {
     font-family: 'inter', sans-serif;
     background-color: #F5F5F5;
     margin: 0;
+    height: 100vh;
 }
 
 .header-logout {
@@ -155,7 +156,7 @@ input {
     align-items: flex-start;
     justify-content: center;
     width: 232px;
-    height: 229px;
+    /* height: 229px; */
     gap: 20px;
     font-size: 16px;
     font-weight: 400;
@@ -170,15 +171,10 @@ input {
     justify-content: center;
     height: 60px;
     gap: 15px;
-    padding-right: 10px;
 }
 
 .sidebar-mid a:hover {
     background-color: #091931;
-}
-
-.sidebar-mid a:nth-child(2) {
-    padding-right: 15px;
 }
 
 .sidebar-bottom {

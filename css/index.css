@@ -76,10 +76,6 @@ input:focus {
     background-color: #29ABE2;
 }
 
-.sign-up-div span:hover {
-    scale: 1.1;
-}
-
 .log-in-container {
     display: flex;
     flex-direction: column;
@@ -347,6 +343,14 @@ to {
 @media (max-width: 600px) {
     .join-logo {
         width: 315px;
+    }
+
+    .sign-up-div span {
+        font-size: 12px;
+    }
+
+    .sign-up-div {
+        gap: 18px;
     }
 }
 

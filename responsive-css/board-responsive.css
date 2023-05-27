@@ -57,7 +57,7 @@
         width: unset;
     }
 
-    .modyfy-button {
+    .modify-button {
         justify-content: space-between;
     }
 
@@ -74,7 +74,7 @@
 
 
 
-    .modyfy-button {
+    .modify-button {
         left: 190px;
     }
 
@@ -146,19 +146,23 @@
         width: unset;
         max-height: unset;
         border-radius: unset;
+        padding-top: 120px;
     }
 }
 
 @media (max-width: 420px) {
-    .modyfy-button {
+    .modify-button {
         top: 0px;
         left: 116px;
+        position: unset;
     }
+
+
 }
 
 @media (max-width: 400px) {
     .sidebar-mid {
-        width: 93vw;
+        width: 100vw;
     }
 }
 
@@ -169,7 +173,7 @@
     }
 
     .sidebar-header {
-        top: 87vh !important;
+        top: 88vh !important;
         z-index: 19;
     }
 }
@@ -191,8 +195,26 @@
 }
 
 
-@media (max-height: 900px) {
-    .showTask {
-        max-height: 650px;
+@media (max-height: 850px) {
+    .sidebar-header {
+        top: 90vh !important;
+    }
+}
+
+@media (min-height: 900px) and (max-width: 850px) {
+    .sidebar-header {
+        top: 91vh !important;
+    }
+}
+
+@media (min-height: 1000px) and (max-width: 850px) {
+    .sidebar-header {
+        top: 92vh !important;
+    }
+}
+
+@media (min-height: 1100px) and (max-width: 850px) {
+    .sidebar-header {
+        top: 93vh !important;
     }
 }

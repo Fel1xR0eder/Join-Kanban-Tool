@@ -16,6 +16,10 @@ function createContact() {
         color: inputColor.value
     }
     showSuccessPopUpContacts('Contact successfully created!');
+    createContactTimeout(inputFirstName, inputColor);
+}
+
+function createContactTimeout(inputFirstName, inputColor) {
     setTimeout(() => {
         pushCreatedContact();
         closePopup();

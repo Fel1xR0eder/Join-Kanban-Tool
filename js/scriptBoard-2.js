@@ -198,25 +198,27 @@ async function saveModifiedTask() {
     if (subTaskIsFocused == inputSubTask) {
         pushNewSubTask();
     } else {
-        checkAnySubtasks(modifiedTask);
-        showSuccessPopUp('Task added to board!');
-
-        let task = {
-            'id': modifiedTask['id'],
-            'title': title.value,
-            'description': description.value,
-            'date': date.value,
-            'category': category,
-            'categoryColor': color,
-            'priority': priority,
-            'AssignedTo': selectedContacts,
-            'subTasks': allModifiedSubTasks,
-            'split': modifiedTask['split'],
-        };
-        setTimeout(() => {
-            renderModifiedTask(task, allModifiedSubTasks);
-        }, 1500);
+        elseSMT();
     }
+}
+
+function elseSMT() {
+    checkAnySubtasks(modifiedTask);
+    showSuccessPopUp('Task added to board!');
+    
+    let task = {
+        'id': modifiedTask['id'],
+        'title': title.value,
+        'description': description.value,
+        'date': date.value,
+        'category': category,
+        'categoryColor': color,
+        'priority': priority,
+        'AssignedTo': selectedContacts,
+        'subTasks': allModifiedSubTasks,
+        'split': modifiedTask['split'],
+    };
+    setTimeout(() => renderModifiedTask(task, allModifiedSubTasks), 1500);
 }
 
 

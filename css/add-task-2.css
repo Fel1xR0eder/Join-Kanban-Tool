@@ -151,19 +151,20 @@
 }
 
 .input-nav-box {
-    top: -40px;
-    display: flex;
     position: relative;
+    top: -40px;
+    left: 365px;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 60px;
-    left: 350px;
+    gap: 7px;
     cursor: pointer;
 }
 
 .hook {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 .line {
@@ -171,8 +172,9 @@
 }
 
 .x-black {
-    width: 18px;
-    height: 18px;
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
 }
 
 .x-black-subtask {

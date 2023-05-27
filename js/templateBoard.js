@@ -38,7 +38,7 @@ function templateOpenShowTask(title, description, date, priority, category, cate
     <div class="assigned-modifyTask">
         <div id="assigned-box" ></div>
     </div>
-    <div  id="modify-task" class="modyfy-button" >
+    <div  id="modify-task" class="modify-button" >
         <button onclick="renderMoveBox()" class="moveTaskBtn" >Move</button>
         <img onclick="modifyTaskOnBoard()" src="./assets/img/edit-button.png" alt="">
     </div>

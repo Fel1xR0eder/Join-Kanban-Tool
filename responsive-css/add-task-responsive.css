@@ -328,10 +328,12 @@
     }
 
     .input-nav-box {
-        top: -90px;
-        left: 150px;
+        top: -44px;
+        left: 216px;
         padding-top: 5px;
+        gap: 7px;
     }
+
 
     .render-category-box {
         width: 270px;
@@ -351,7 +353,7 @@
         width: 270px;
         gap: 4px;
     }
-    
+
     .prio-icons {
         width: 15px;
         height: 11px;
@@ -455,5 +457,29 @@
 @media (max-height: 1000px) and (min-width: 900px) {
     .show-addTask {
         scale: 0.8;
+    }
+}
+
+@media (max-height: 850px) {
+    .sidebar-header {
+        top: 90vh !important;
+    }
+}
+
+@media (min-height: 900px) and (max-width: 850px) {
+    .sidebar-header {
+        top: 91vh !important;
+    }
+}
+
+@media (min-height: 1000px) and (max-width: 850px) {
+    .sidebar-header {
+        top: 92vh !important;
+    }
+}
+
+@media (min-height: 1100px) and (max-width: 850px) {
+    .sidebar-header {
+        top: 93vh !important;
     }
 }
