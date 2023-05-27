@@ -303,12 +303,12 @@
         width: 93vw;
     }
 }
-
+/* 
 @media (max-height: 850px) {
     .sidebar-header {
         top: 90vh !important;
     }
-}
+} */
 
 @media (min-height: 900px) and (max-width: 850px) {
     .sidebar-header {
