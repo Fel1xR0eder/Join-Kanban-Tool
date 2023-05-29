@@ -198,11 +198,12 @@ async function saveModifiedTask() {
     if (subTaskIsFocused == inputSubTask) {
         pushNewSubTask();
     } else {
-        elseSMT();
+        elseSMT(modifiedTask);
     }
 }
 
-function elseSMT() {
+
+function elseSMT(modifiedTask) {
     checkAnySubtasks(modifiedTask);
     showSuccessPopUp('Task added to board!');
     
