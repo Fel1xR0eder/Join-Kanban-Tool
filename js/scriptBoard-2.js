@@ -294,3 +294,8 @@ function closeMoveBox() {
         <img src="./assets/img/edit-button.png" alt="">
     `;
 }
+
+function dueDate() {
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName('today')[0].setAttribute('min', today);
+}

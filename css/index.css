@@ -380,10 +380,9 @@ to {
 
     .log-in-container {
         padding: 40px 0;
-        gap: 40px;
-        height: unset;
+        gap: 20px;
         width: 330px;
-        height: 510px;
+        height: 430px;
     }
 
     .log-in {

@@ -14,10 +14,11 @@
     <script src="./js/scriptAddTask.js"></script>
     <script src="./js/scriptAddTask-2.js"></script>
     <script src="./js/mini_backend.js"></script>
+
 </head>
 
 <body>
-    <div onclick="event.stopPropagation()"  id="addTaskContent" class="show-addTask show">
+    <div onclick="event.stopPropagation()" id="addTaskContent" class="show-addTask show">
         <div id="mainHeadline" class="include-headline">
             <h1 class="addTask-header">Add task</h1>
             <img class="close-addtask-include" onclick="closeIncludeAddTask()" src="./assets/img/exit.png" alt="">
@@ -40,13 +41,14 @@
                 <div id="taskContentRight" class="taskContentRight">
                     <div class="addToTaskInputSectionRight">
                         <span class="addTask-Subheaders">Due date</span>
-                        <input type="date" name="today" placeholder="" class="addTotaskInputField" id="date">
+                        <input onclick="dueDate()" type="date" name="today" placeholder="" class="addTotaskInputField"
+                            id="date">
                     </div>
                     <div id="prio" class="prio addToTaskInputSectionRight"></div>
                     <div id="subtask" class="Subtask addToTaskInputSectionRight"></div>
                     <div class="btnRow">
-                        <button onclick="clearAllFields()"  type="button" class="guest-log-in-btn" >Clear</button>
-                        <button  class="log-in-btn">Add Task</button>
+                        <button onclick="clearAllFields()" type="button" class="guest-log-in-btn">Clear</button>
+                        <button class="log-in-btn">Add Task</button>
                     </div>
                 </div>
             </div>
@@ -54,9 +56,4 @@
                 <div id="popup-content" class="messageBox"></div>
             </div>
         </form>
-
-        <script>
-            var today = new Date().toISOString().split('T')[0];
-            document.getElementsByName('today')[0].setAttribute('min', today);
-        </script>
 </body>
