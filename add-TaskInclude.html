@@ -40,7 +40,7 @@
                 <div id="taskContentRight" class="taskContentRight">
                     <div class="addToTaskInputSectionRight">
                         <span class="addTask-Subheaders">Due date</span>
-                        <input type="date" placeholder="" class="addTotaskInputField" id="date">
+                        <input type="date" name="today" placeholder="" class="addTotaskInputField" id="date">
                     </div>
                     <div id="prio" class="prio addToTaskInputSectionRight"></div>
                     <div id="subtask" class="Subtask addToTaskInputSectionRight"></div>
@@ -55,5 +55,8 @@
             </div>
         </form>
 
-
+        <script>
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementsByName('today')[0].setAttribute('min', today);
+        </script>
 </body>
