@@ -67,6 +67,11 @@
         width: 100px !important;
         height: 100px !important;
     }
+
+    .x-container-edit {
+        top: -351px;
+        right: -560px;
+    }
 }
 
 

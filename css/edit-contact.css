@@ -88,8 +88,8 @@ input:focus {
     cursor: pointer;
     font-size: 30px;
     position: relative;
-    top: -350px;
-    right: -555px;
+    top: -361px;
+    right: -610px;
 }
 
 #profile-img {
@@ -140,10 +140,10 @@ input:focus {
     gap: 35px;
 }
 
-.primary-btn:hover {
+.save-button:hover {
     background-color: #29abe2 !important;
 }
 
-.edit-button-red:hover {
+.edit-button-red {
     background-color: red !important;
 }
