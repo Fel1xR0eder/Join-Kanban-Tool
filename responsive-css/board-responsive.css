@@ -146,7 +146,8 @@
         width: unset;
         max-height: unset;
         border-radius: unset;
-        padding-top: 120px;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 }
 
@@ -176,6 +177,10 @@
         top: 88vh !important;
         z-index: 19;
     }
+
+    .task-box {
+        min-height: 170px;
+    }
 }
 
 
@@ -183,6 +188,10 @@
     .sidebar-header {
         top: 89vh !important;
         z-index: 19;
+    }
+
+    .task-box {
+        min-height: 200px;
     }
 }
 
@@ -194,12 +203,6 @@
     }
 }
 
-
-/* @media (max-height: 850px) {
-    .sidebar-header {
-        top: 90vh !important;
-    }
-} */
 
 @media (min-height: 900px) and (max-width: 850px) {
     .sidebar-header {

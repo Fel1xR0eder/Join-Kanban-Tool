@@ -88,11 +88,6 @@
         width: 250px;
     }
 
-    .input-nav-box {
-        top: -90px;
-        left: 150px;
-    }
-
     .color-box {
         width: 210px;
         left: 0;
@@ -170,7 +165,7 @@
         justify-content: center;
         margin-top: 80px;
         margin-left: 0;
-        margin-bottom: 117px;
+        margin-bottom: 50px;
     }
 
     .taskContentRight {
@@ -274,7 +269,6 @@
 
     .btnRow {
         justify-content: space-evenly;
-        padding-top: 40px;
     }
 
     .subtask {

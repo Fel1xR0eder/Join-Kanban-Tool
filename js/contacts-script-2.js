@@ -94,9 +94,9 @@ function filterLetter(letter) {
 
 /**
  * 
+ * render the contact section
  * @param {'All contacts of the same character'} currentLetter 
  * @param {'First character of name'} letter 
- * 
  */
 function renderLetterBox(currentLetter, letter) {
     let firstChar = letter;
@@ -104,6 +104,14 @@ function renderLetterBox(currentLetter, letter) {
         <div id="char-section${letter}" class="first-char">${firstChar}</div>
         <div class="same-letters" id='theSameLetters${letter}'></div>
     `
+    renderForLoop();
+}
+
+/**
+ * 
+ * for loop to get all informations of the contacts
+ */
+function renderForLoop() {
     for (let i = 0; i < currentLetter.length; i++) {
         currentcontact = currentLetter[i];
         let color = currentcontact['color'];
@@ -117,7 +125,7 @@ function renderLetterBox(currentLetter, letter) {
         let contactLetter = document.getElementById(`theSameLetters${firstChar}`);
 
         contactLetter.innerHTML += generateAllContacts1(currentcontact, firstChar, secondChar, i, color, firstName, fullFirstname, fullName);
-
+        
         if (!initials.includes(charSection)) {
             initials.push(charSection);
         }

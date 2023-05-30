@@ -11,26 +11,29 @@
     <link rel="stylesheet" href="./css/style-legal.css">
     <link rel="stylesheet" href="./css/summary.css">
     <link rel="stylesheet" href="./responsive-css/summary-responsive.css">
+    <link rel="stylesheet" href="./responsive-css/board-responsive.css">
     <link rel="stylesheet" href="./responsive-css/legal-notice.responsive.css">
     <script src="./js/login.js"></script>
     <script src="./js/contacts-script.js"></script>
     <script src="./js/contacts-script-2.js"></script>
-
 </head>
 
-<body >
+
+<body>
     <div class="header">
+        <img class="new-logo d-none" src="./assets/img/join-logo.png">
         <span class="sub-header">Kanban Project Management Tool </span>
         <div id="header-contacts" class="head-container-right">
             <a href="./help.html"><img src="./assets/img/question.png"></a>
-            <img class="head-profile-img"onmouseover="showLogout()" src="./assets/img/profile-img.png">
+            <a class="legal-notice-mobile" href="./legal-notice.html"><img src="./assets/img/info-logo.png"></a>
+            <img class="head-profile-img" onmouseover="showLogout()" src="./assets/img/profile-img.png">
             <div id="header-logout" onmouseout="hideLogout()" class="header-logout">
                 <button onclick='logout()' id="logout-button" class="logout-button"> Log-out? </button>
             </div>
         </div>
     </div>
-    <div class="sidebar-header" id="sidebar-header">
 
+    <div class="sidebar-header" id="sidebar-header">
         <div class="sidebar-top">
             <img class="join-logo" src="./assets/img/join-logo-white.png">
         </div>
@@ -70,21 +73,21 @@
                         </div>
                     </a>
                 </div>
-        </div>
-        <a class="sidebar-bottom" href="./legal-notice.html">Legal notice
-            <div class="sidebarBottomLegalNotice">
-                <img src="./assets/img/info-logo.png">
             </div>
-        </a>
-        <!--    ####    SIDEBAR END ####    -->
-        
+            <a class="sidebar-bottom" href="./legal-notice.html">Legal notice
+                <div class="sidebarBottomLegalNotice">
+                    <img src="./assets/img/info-logo.png">
+                </div>
+            </a>
+        </div>
     </div>
-    <div class="legal-overview">
+
+    <div class="legal-overview-help">
         <div class="headline-index">
             <span>Help</span>
             <img onclick="backToSummary()" class="arrow-left" src="./assets/img/arrow-left.png">
         </div>
-        
+
         <div>
             <h2 class="help-texts">What is Join?</h2>
             <p>

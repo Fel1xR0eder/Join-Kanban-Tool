@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="./responsive-css/summary-responsive.css">
     <link rel="stylesheet" href="./responsive-css/board-responsive.css">
     <link rel="stylesheet" href="./responsive-css/contacts-responsive.css">
-    <!-- <link rel="stylesheet" href="./responsive-css/add-contact.responsive.css">
-    <link rel="stylesheet" href="./responsive-css/edit-contact.responsive.css"> -->
     <script src="./js/contacts-script.js"></script>
     <script src="./js/contacts-script-2.js"></script>
     <script src="./js/templateContacts.js"></script>
@@ -30,20 +28,21 @@
 </head>
 
 <body onload="onloadContacts()">
-    <div onclick="closePopup()" id="show-Contacts-Background" class="show-Contact-Background d-none">
-
-    </div>
-    <div class="header-contacts">
+    <div onclick="closePopup()" id="show-Contacts-Background" class="show-Contact-Background d-none"></div>
+    
+    <div class="header">
         <img class="new-logo d-none" src="./assets/img/join-logo.png">
-        <span>Kanban Project Management Tool</span>
+        <span class="sub-header">Kanban Project Management Tool </span>
         <div id="header-contacts" class="head-container-right">
             <a href="./help.html"><img src="./assets/img/question.png"></a>
+            <a class="legal-notice-mobile" href="./legal-notice.html"><img src="./assets/img/info-logo.png"></a>
             <img class="head-profile-img" onmouseover="showLogout()" src="./assets/img/profile-img.png">
             <div id="header-logout" onmouseout="hideLogout()" class="header-logout">
                 <button onclick='logout()' id="logout-button" class="logout-button"> Log-out? </button>
             </div>
         </div>
     </div>
+
     <div class="sidebar-header" id="sidebar-header">
 
         <div class="sidebar-top">
