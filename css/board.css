@@ -221,6 +221,7 @@ input {
 }
 
 .task span {
+    text-align: center;
     font-size: 21px;
     font-weight: 700;
 }

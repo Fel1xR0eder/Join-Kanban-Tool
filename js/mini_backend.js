@@ -1,7 +1,7 @@
 let jsonFromServer = {};
 let BASE_SERVER_URL;
 
-setURL('https://felix-roeder.developerakademie.net/join/smallest_backend_ever');
+setURL('https://felixroeder.de/join/smallest_backend_ever');
 
 
 const backend = {
@@ -27,6 +27,7 @@ window.onload = async function() {
 async function downloadFromServer() {
     let result = await loadJSONFromServer();
     jsonFromServer = JSON.parse(result);
+    console.log('loaded', result);
 }
 
 function setURL(url) {
